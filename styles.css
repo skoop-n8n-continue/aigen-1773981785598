@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #000000;
+    color: #ffffff;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    overflow: hidden; /* Hide scrollbars for digital signage */
+    width: 100vw;
+    height: 100vh;
+}
+
+#app {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.scroll-content {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.category {
+    margin-bottom: 20px;
+}
+
+.category-header {
+    background-color: #dea34f;
+    color: #000000;
+    font-weight: bold;
+    font-size: 1.25rem;
+    padding: 8px 12px;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    line-height: 1.5;
+}
+
+.category-name {
+    flex: 1;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.header-thc {
+    width: 80px;
+    text-align: center;
+}
+
+.header-price {
+    width: 80px;
+    text-align: right;
+}
+
+.item-row {
+    background-color: #1a1a1a;
+    height: 55px;
+    padding: 6px 12px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 4px;
+}
+
+.border-sativa { border-left: 8px solid #dea34f; }
+.border-indica { border-left: 8px solid #6b8eac; }
+.border-hybrid { border-left: 8px solid #7b9d74; }
+
+.item-name-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.item-name {
+    font-size: 1.0625rem;
+    text-transform: uppercase;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.item-brand {
+    font-size: 0.85rem;
+    color: #ffffff;
+    opacity: 0.6;
+    text-transform: uppercase;
+}
+
+.item-thc {
+    width: 80px;
+    text-align: center;
+    font-size: 0.85rem;
+}
+
+.item-price-container {
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    line-height: 1.1;
+}
+
+.item-price {
+    color: #dea34f;
+    font-weight: 700;
+    font-size: 1.0625rem;
+}
+
+.item-weight {
+    color: #ffffff;
+    opacity: 0.6;
+    font-size: 0.85rem;
+}
